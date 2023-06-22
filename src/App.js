@@ -1,6 +1,5 @@
 import { BrowserRouter, Route,Routes } from 'react-router-dom';
 import './App.css';
-import Form from './components/AdderCard';
 import HomeScreen from './components/HomeScreen';
 import usersData from './dummydata';
 import { useEffect } from 'react';

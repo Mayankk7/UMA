@@ -58,7 +58,7 @@ const HomeScreen = () => {
       </div>
       <div className="flex m-auto w-[80vw] flex-wrap p-6 flex-row justify-evenly mt-[10vh]">
         {addNew && <AdderCard handleAddUser={handleAddUser} setAddNew={setAddNew}/>}
-        { users.length == 0 && !addNew ? <>
+        { users.length === 0 && !addNew ? <>
             <p className='text-xl uppercase underline mt-5 text-black font-roboto font-bold overflow-hidden'>No User Information Present</p>
           </>:
         <>

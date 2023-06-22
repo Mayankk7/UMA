@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { FaUserEdit, FaUserMinus } from 'react-icons/fa';
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 import {FcCancel} from 'react-icons/fc';
 import { v4 as uuidv4 } from 'uuid';
@@ -30,6 +29,7 @@ const AdderCard = ({handleAddUser,setAddNew}) => {
 
     if (Object.keys(formErrors).length > 0) {
       setErrors(formErrors);
+      console.log(errors);
       return;
     }
 
